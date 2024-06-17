@@ -1,0 +1,14 @@
+name: example-basic
+# This workflow represents a set of basic End-to-End tests
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  basic-ubuntu-20:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Go Unit Test Coverage Report
+        uses: fgrosse/go-coverage-report@v1.0.2
+            
