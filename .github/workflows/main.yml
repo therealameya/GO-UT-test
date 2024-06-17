@@ -9,6 +9,11 @@ jobs:
   basic-ubuntu-20:
     runs-on: ubuntu-20.04
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.7
+            
       - name: Go Unit Test Coverage Report
         uses: fgrosse/go-coverage-report@v1.0.2
+
+  
             
